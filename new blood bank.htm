@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Blood Bank</title>
+<style>
+body {
+  margin: 1;
+}
+
+/* Style the header */
+#header{}
+#header #logo{margin:30px 0 0 0;}
+#header #logo h1{margin:1; padding:0; line-height:1; font-size:22px;}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links*/ 
+.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(220,20,60);
+    color: black;
+}
+
+/*background image*/
+body{
+ background-image: url("images/demo/backgrounds/2.jpg");
+ background-repeat: no-repeat;
+}
+
+.container{
+width: 450px;
+height: 400px;
+float:center;
+ text-align:center;
+ padding:90px 450px;
+ display:block;
+ 
+}
+
+.formbox
+{
+width: 100%;
+padding: 80px 60px;
+box-sizing: border-box;
+height: 400px;
+background: rgb(178,34,34);
+border:2px solid black ;
+opacity:0.9;
+}
+.formbox p
+{
+margin: 0%;
+font-weight: bold;
+color: white ;
+}
+.formbox input
+{
+margin-bottom: 20px;
+}
+
+</style>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["Blood Bank Name"].value;
+    var y = document.forms["myForm"]["Location"].value;
+    var z = document.forms["myForm"]["Contact Number"].value;
+    if (x == "") {
+        alert("Blood Bank Name must be filled out");
+        return false;
+    }
+    if (y == ""){
+    alert("Location must be filled out");
+        return false;
+    }
+    if (z == ""){
+    alert("Mobile No. must be filled out");
+        return false;
+    }
+}
+
+    </script>
+</head>
+<body>
+<header id="header"> 
+    <div id="logo">
+      <h1><img src="images/demo/backgrounds/01.png" alt="" ></img></h1>
+      <h1><center>BLOOD BANK</center></h1>
+    </div>
+    
+
+<div class="topnav">
+  <a href="admin.htm" style="float:right"><b>Home</b></a>
+</div>
+<div class="container">
+<div class="formbox">
+
+<form name="myForm" onsubmit="return validateForm()" >
+
+   <p>Blood Bank Name</p><input type="text" name ="Blood Bank Name" placeholder="Enter Bood bank name">
+    <p>Location</p><input type="text" name ="Location" placeholder="Enter City/Location" >
+    <p>Contact Number</p><input type="tel" name ="Contact Number" placeholder="Enter Mobile No" pattern="[0-9]{10}" title="10 digit mobile no" >   
+<br>
+ <input type="Submit" value="Submit">
+     
+</form>
+</div>
+</div>
+<!-- JAVASCRIPTS -->
+
+<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>

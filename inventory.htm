@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inventory</title>
+<style>
+body {
+  margin: 1;
+}
+
+/* Style the header */
+#header{}
+#header #logo{margin:30px 0 0 0;}
+#header #logo h1{margin:1; padding:0; line-height:1; font-size:22px;}  
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(88,88,88);
+}
+
+/* Style the topnav links */
+.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color:rgb(220,20,60);
+    color: black;
+}
+
+/*background image*/
+body{
+ background-image: url("images/demo/backgrounds/08.jpg");
+ background-size: cover;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+   float:center;
+  margin:auto;
+  width:75%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: rgb(192,192,192);}
+
+#customers tr:hover {background-color: white;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(240,37,24);
+    color: black;
+   
+}
+
+
+.container{
+ float:center;
+ text-align:center;
+ padding:90px 100px;
+ display:block;
+ }
+
+</style>
+</head>
+<body>
+<header id="header"> 
+    <div id="logo">
+      <img src="images/demo/backgrounds/01.png" alt="" ></img>
+      <h1><center><b>INVENTORY</b></center></h1>
+    </div>
+
+<div class="topnav">
+  <a href="admin.htm" style="float:right"><b>Home</b></a>
+</div>
+
+<div class="container" >
+<table id="customers" >
+
+  <tr>
+    <th>Blood Group</th>
+    <th>Stock(Bottles)</th>
+    <th>Demand(Bottles)</th>
+  </tr>
+  <tr>
+    <td><b>A-</b></td>
+    <td>500</td>
+    <td>243</td>
+  </tr>
+  <tr>
+    <td><b>A+</b></td>
+    <td>700</td>
+    <td>456</td>
+  </tr>
+  <tr>
+    <td><b>B-</b></td>
+    <td>432</td>
+    <td>156</td>
+  </tr>
+  <tr>
+    <td><b>B+</b></td>
+    <td>634</td>
+    <td>321</td>
+  </tr>
+  <tr>
+    <td><b>AB-</b></td>
+    <td>427</td>
+    <td>153</td>
+  </tr>
+  <tr>
+    <td><b>AB+</b></td>
+    <td>234</td>
+    <td>97</td>
+  </tr>
+  <tr>
+    <td><b>O-</b></td>
+    <td>267</td>
+    <td>200</td>
+  </tr>
+  <tr>
+    <td><b>O+</b></td>
+    <td>423</td>
+    <td>237</td>
+  </tr>
+  
+  
+</table>
+</div>
+</body>
+</html>

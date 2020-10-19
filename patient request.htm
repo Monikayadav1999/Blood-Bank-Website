@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Patient request</title>
+<style>
+body {
+  margin: 1;
+}
+
+/* Style the header */
+#header{}
+#header #logo{margin:30px 0 0 0;}
+#header #logo h1{margin:1; padding:0; line-height:1; font-size:22px;}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(220,20,60);
+    color: black;
+}
+
+/*background image*/
+body{
+ background-image: url("images/demo/backgrounds/10.jpg");
+ background-size:cover;
+}
+
+.container{
+ float:right;
+ text-align:center;
+ padding:70px 80px;
+ display:block;
+ }
+ 
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button1 {
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button1:hover {
+  opacity: 0.8;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+    width: 20%;
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container1{
+/*float:center;*/
+    padding: 5px 5px;
+background-color:grey;
+    
+}
+
+</style>
+</head>
+<body>
+<header id="header" class="hoc clear"> 
+    <div id="logo" class="fl_left">
+      <img src="images/demo/backgrounds/01.png" alt="" ></img>
+      <h1><center>PATIENT REQUEST</center></h1>
+    </div>
+</header>
+<div class="topnav">
+  <a href="admin.htm" style="float:right"><b>Home</b></a>
+</div>
+<div class="container">
+<div class="card">
+ <div class="container1">
+  <img src="images/demo/backgrounds/13.jpg" alt="Avatar" style="width:100%">
+ 
+    <h4><a href="#" style="text-decoration:none"><b>John Doe</b></a></h4> 
+    <p>Required <b>2 bottles of AB-</b></p> 
+    <button onclick="alert('Request Accepted (This page is only for Demo purpose as this page is not connected with any Database)')">Accept</button>
+    <button1 onclick="alert('Request Declined (This page is only for Demo purpose as this page is not connected with any Database)')">Decline</button1>
+  </div>
+</div>
+</div>
+<div class="container">
+<div class="card">
+<div class="container1">
+<img src="images/demo/backgrounds/12.jpg" alt="Avatar" style="width:100%">
+    <h4><a href="#" style="text-decoration:none"><b>Mary Johnson</b></a></h4> 
+    <p>Required <b>1 bottle of O-</b></p> 
+    <button onclick="alert('Request Accepted (This page is only for Demo purpose as this page is not connected with any Database)')">Accept</button>    
+<button1 onclick="alert('Request Declined (This page is only for Demo purpose as this page is not connected with any Database)')">Decline</button1>
+ </div>
+</div>
+</div>
+</body>
+</html>
